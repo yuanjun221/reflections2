@@ -1,0 +1,43 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    通过diff命令比较，可以忽略文件中相同的部分，快速定位到不同的位置，从而很快能找到问题所在。
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    通过记录历史记录，可以方便快捷地访问所有历史版本，可以还原删除的内容，也可以丢弃不需要的内容。
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    手动提交
+	优点：可以根据逻辑来进行提交，避免不必要的过小提交或过大提交
+	缺点：如果不遵循逻辑提交的法则，那么提交可能会变得过于琐碎或者过大。甚至忘记提交。
+    自动提交：
+        优点：不会遗忘
+        缺点：不遵循逻辑提交，提交可能变得难以回溯。比如中途增加了新的内容，但是提交前删除了，
+  	     提交后则不能再回到添加新内容后的状态。
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    它们保存的文件类型和组织方式有差别。Git通常来维护一个完成程序或功能的代码，这些代码往往分布在不同的文件中，
+    它们互相作用，协同工作，对一个功能的更改往往涉及到不同文件中代码的修改，因此需要同时管理这些文件某个时刻的版本。
+    而对于Google Docs，更多的是用以管理单个文档，文档之间并没有内容上的高度关联，修改一个文档并不会改变其他文档的可用性，
+    因此分开对待即可。
+
+How can you use the commands git log and git diff to view the history of files?
+
+    在仓库下 使用git log会出现commit历史
+    git diff code1 code2
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    因为留有之前的历史版本，即使当前产生了破坏性的修改，我也能轻易回溯到之前的版本中。
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    CS61B中的初始环境配置，需要git的一些网络操作

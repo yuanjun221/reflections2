@@ -1,0 +1,24 @@
+What happens when you initialize a repository? Why do you need to do it?
+在该文件夹下会创建一个.git文件夹，用来存储每个commit的“快照”状态。
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+working directory : 存放文件的目录
+repository : git管理的仓库
+staging area : 用来暂存准备提交的缓存区，在提交之前，可以撤回或更改。也可以追加其他需要提交的文件。
+作用：充当一个缓存区的角色，可以在此决定哪些文件需要被最终提交。
+
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
