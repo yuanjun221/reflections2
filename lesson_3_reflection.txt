@@ -7,24 +7,28 @@ local?
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    可能会出现远程仓库有其他人做出了修改，而我的本地仓库也有一些改动。两边的改可能存在分歧需要手动判断
+    哪些内容需要被保留。因此需要始终进行手动同步。
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    fork : 将github上其他人的某个仓库作为一个副本保存在自己的账户下
+    clone : 将github上的某个仓库（多数是你自己的或者从其他人那里fork的）下载的本地
+    branch : 是整个版本控制流中的某个分支。  
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    如果本地版本和远程版本产生冲突，在合并时要做的修改工作会比较少。如果长时间未同步，本地和远程版本的分歧
+    可能过大，合并时所作的操作会比较困难。
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    可以手动管理，但是在项目汇总合并时会变得非常困难。
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    当进行某项实验性质的修改时，可能会采用分支，而不是在主线上修改。
