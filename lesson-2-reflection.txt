@@ -11,14 +11,28 @@ staging area : 用来暂存准备提交的缓存区，在提交之前，可以�
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+使用 git diff来比较working directory和staging area是否为一个逻辑的更改，如果是，则add改更改。
+使用 git diff --staged来比较staging area和commit 1是否为一个逻辑的更改，如果是，则commit更改。
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+有时候，你忽然有一些试验性的想法想进行验证，可以创建一个分支来实践这些想法，对分支的修改并不会更改主线的版本。
+在未来某时有用时，或许可以将该分支合并到主线中。
+
 
 How do the diagrams help you visualize the branch structure?
+利用图表，可以一目了然地纵览整个提交历史，比如有多少分支，每个分支有多少个节点。有助于理解。
+
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+将新增的内容合并到一起。图表表明了合并的结果继承自两天分支的所有节点。
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+自动合并：
+    优点：节省工作量，不需要手动干预
+    缺点：自动合并以每次修改都是有意为前提，即使有未可知的错误，也会被合并顺延下去。
+手动合并：
+    优点：会让程序员自行判断意图，以消解两个分支之间的冲突
+    缺点：需要人工判断，有时情况可能会变得很复杂。
